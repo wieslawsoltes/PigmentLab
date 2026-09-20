@@ -1,0 +1,5 @@
+
+> pigmentlab@1.0.0 build
+> node scripts/build.mjs
+
+Built 11 modules. Standalone HTML: 221.4 KiB. No runtime dependencies.

@@ -1,0 +1,770 @@
+{
+  "application": "PigmentLab",
+  "version": "1.0.0",
+  "runtimeDependencies": "none outside @pigmentlab packages",
+  "validation": {
+    "nodeTests": 42,
+    "browserStudioChecks": 54,
+    "browserBackend": "cpu",
+    "independentBrowserExample": "passed",
+    "independentNpmConsumer": "passed",
+    "gpuExecuted": false
+  },
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "bytes": 1354,
+      "sha256": "574b3977587471d1e17b974ea316c864a083e1bf93bd98258626e294c18d6874"
+    },
+    {
+      "path": ".github/workflows/import.yml",
+      "bytes": 3410,
+      "sha256": "aa11d3b963b9f288287dbd8d1756ae37f585d2bd4d28ee8306e64ed37307c9d4"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 1638,
+      "sha256": "05c94647e31f292f105d1f5e1642461507369f07674c1b388c7bdc314be87878"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 118,
+      "sha256": "f093bf188072be1a9911e878dc2625243777dbca8a9761ad0b575cec688f380c"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7226,
+      "sha256": "17242f128d86f36ee62ef295d75ca5d73911fc96b4bdd860aa376b1ee6093119"
+    },
+    {
+      "path": "app/demo.js",
+      "bytes": 6717,
+      "sha256": "691e4a1edbc541135d35df868ce690766da4a8270048c384dddfabe3586efc7d"
+    },
+    {
+      "path": "app/main.js",
+      "bytes": 88867,
+      "sha256": "68f3c0fd185c6ff83d9a5c7b402480cc8d2bcc9365bf5535c4c250d4035fa4ef"
+    },
+    {
+      "path": "artifacts/browser-run.txt",
+      "bytes": 2498,
+      "sha256": "e73be3835fb63747d1ae7072b3b850cbc163f61e2827181dd697c437f9b5714b"
+    },
+    {
+      "path": "artifacts/browser-tests.json",
+      "bytes": 5368,
+      "sha256": "0ba8a9a549e41c9e3cf9ce90c6f9d5ce9fd7202d20427b1c190126b10a75c592"
+    },
+    {
+      "path": "artifacts/build.txt",
+      "bytes": 123,
+      "sha256": "f1b1c3d3385ca15deecc0c6baf0ed357a40dc7b2dae4aa503b521c160bab4b9c"
+    },
+    {
+      "path": "artifacts/desktop-dark.png",
+      "bytes": 658106,
+      "sha256": "1e974e6937caa9490e191eb26042c3059b7d809db32a821ba6f2ef535fa2d221"
+    },
+    {
+      "path": "artifacts/desktop-light.png",
+      "bytes": 662307,
+      "sha256": "6dd0d5ad21bcf6ae4e03f80e4c7996a6c5e9add60287469aa8ccab81b526c792"
+    },
+    {
+      "path": "artifacts/examples-tests.json",
+      "bytes": 357,
+      "sha256": "5537e103d22960b62bad828ddcf24de1e303d0152c2d7b0c91449ba32dfd38c1"
+    },
+    {
+      "path": "artifacts/http-routes.txt",
+      "bytes": 265,
+      "sha256": "26090cb5adc8e3c46090820ac4db684592aa7afa6641abf18a9c2157fc57b131"
+    },
+    {
+      "path": "artifacts/integration-export.png",
+      "bytes": 14589,
+      "sha256": "bee919eca7175cb6fcd33e1c39dc6de9e02867f52c0cd697a5f3d60f23bab908"
+    },
+    {
+      "path": "artifacts/integration-process.webm",
+      "bytes": 2679,
+      "sha256": "7f020da37101d17bceaa34ffeddaf29df7d174eaa3a3c0f7c5d2bb97d62bc641"
+    },
+    {
+      "path": "artifacts/integration-roundtrip.pigment",
+      "bytes": 839841,
+      "sha256": "ccb67b8db702adc5ae0e1335d59e93fdd3851eb9ca63d6fde1ca6ef2d8e387ee"
+    },
+    {
+      "path": "artifacts/integration.brush.json",
+      "bytes": 384,
+      "sha256": "69801cd3faa8cff8cefc4f3751b370ef8374420368fe55e9865ea6dde6e18944"
+    },
+    {
+      "path": "artifacts/mobile.png",
+      "bytes": 129307,
+      "sha256": "60a75fcf22fc5d313a3fd924396103bb23abfb58ede744415876c75928cf9341"
+    },
+    {
+      "path": "artifacts/package-consumer.json",
+      "bytes": 2519,
+      "sha256": "05013c4b63951740437153544fa1b1a195aaba7662317d54838cc748d986e099"
+    },
+    {
+      "path": "artifacts/package-pack.json",
+      "bytes": 7187,
+      "sha256": "e6511d209caac06d6e74e8e805f7afb60ada6acd509e6d9e7a2e11ecf4c0e003"
+    },
+    {
+      "path": "artifacts/syntax-check.txt",
+      "bytes": 95,
+      "sha256": "db82736089b7651abebd0ad5cba7b0da0d31d609b87125bb4d67d6f871d7c228"
+    },
+    {
+      "path": "artifacts/unit-tests.txt",
+      "bytes": 7913,
+      "sha256": "5e3415392654f8df9d0b82bb150e30ce295963fc659415844ddea26732d04e73"
+    },
+    {
+      "path": "artifacts/workspace-install.txt",
+      "bytes": 27,
+      "sha256": "3cece2b2234438626dd0529a85a3bc5017afd6138d0690fbe6fe54573278fb1b"
+    },
+    {
+      "path": "dist/PigmentLab.html",
+      "bytes": 226703,
+      "sha256": "9bdd0f47b86814c8076dfcc9538e26c30cc664ccc6c5fb7fdeb67f03f7aa2b7e"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 226703,
+      "sha256": "9bdd0f47b86814c8076dfcc9538e26c30cc664ccc6c5fb7fdeb67f03f7aa2b7e"
+    },
+    {
+      "path": "dist/pigmentlab.js",
+      "bytes": 193884,
+      "sha256": "4b9e36dbca48267b376c04ca17adae17d5ef1879d12f0d7089ebe3564efc952c"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 31878,
+      "sha256": "d3066b3a3b63a394dbdd78c098351b3bc03caa6157d8dddd690e2e68c7d47263"
+    },
+    {
+      "path": "docs/API.md",
+      "bytes": 7315,
+      "sha256": "6e8036eb5f3514e6e8e3938b5bd0cc641e2445d7feaa916ef5d7a54ea67edf8a"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 11027,
+      "sha256": "57a12971543d97dcc5c0bcc040f6761b6154c8e0cd35cc1e76b5a7ae498c41ce"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "bytes": 4761,
+      "sha256": "15451d829a92fc6928defe33bf83e44c4710bc00d033d349a08842a9752170bb"
+    },
+    {
+      "path": "docs/FORMAT.md",
+      "bytes": 5326,
+      "sha256": "ec0f04d469646b5b07c522a936c55b3048d18ca3839da9d9a9753726f2801cfb"
+    },
+    {
+      "path": "docs/ORIGINAL_RELEASE_MANIFEST.json",
+      "bytes": 15279,
+      "sha256": "d9616dac2746b2ea8b383b0f6bafcbd668859952ad46196e40f00b348e5f0dc5"
+    },
+    {
+      "path": "docs/SOURCE_IMPORT.json",
+      "bytes": 12172,
+      "sha256": "9a870b7b37de644720cc4b18ff2d5fa9e6b0d04887446f69bfae0d5bb3adc824"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "bytes": 8258,
+      "sha256": "6a969bb1afcd54d4d1eada62449f0fb7aabee5b36303ec2646bbafd5ee2b3d1b"
+    },
+    {
+      "path": "examples/Headless-study.pigment",
+      "bytes": 193900,
+      "sha256": "4185359c8b0ba9f09f8d426c0cd4fb1eb1d3d2c04bc17206a6c334cb0dc583db"
+    },
+    {
+      "path": "examples/headless.mjs",
+      "bytes": 1534,
+      "sha256": "1e359a43fc81a8311dd09b7e8aad0398d1631aeff0bafc881226519c76dd5c94"
+    },
+    {
+      "path": "examples/minimal-paint.html",
+      "bytes": 3029,
+      "sha256": "dec28850f9fa895bdac6c517a68f8a86724957dceaa940bc804e05d38676379b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1623,
+      "sha256": "f2e5e49a7ce057fc1e48d8e9c7ea48c2f365e00fffc0184ea18d42f6a11c1c85"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 3041,
+      "sha256": "a69ca2e5441c45cea8c6267113ad29b48bb9c7dc27e108c1c76e22270744dafa"
+    },
+    {
+      "path": "package.json",
+      "bytes": 411,
+      "sha256": "e3568e6bef6b808dee0a99e728c67c4b268b8eb12e5d167e9e9789659ae7de63"
+    },
+    {
+      "path": "packages/brushes/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/brushes/README.md",
+      "bytes": 1036,
+      "sha256": "f80e2a55e504d38c8ce7eb56a9051d93461f87efbc809da6d103b1ee5a0f57ff"
+    },
+    {
+      "path": "packages/brushes/package.json",
+      "bytes": 341,
+      "sha256": "051f63b6ce813d7a3a3f1a4e4f0f9ae52e7c2989afb3bbe592f8ecb16eb977d5"
+    },
+    {
+      "path": "packages/brushes/src/index.js",
+      "bytes": 9255,
+      "sha256": "4702f3efc6f9fce0a1b3ff44fef1c8c2454aaf0be134a70775befe1dc2e01756"
+    },
+    {
+      "path": "packages/core/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/core/README.md",
+      "bytes": 1126,
+      "sha256": "b3f5a7db7ba5aa4c00e1b0787a10e7876914110620eb6310649f06bc94736827"
+    },
+    {
+      "path": "packages/core/package.json",
+      "bytes": 263,
+      "sha256": "3949119c5e1ec4cb1ac11f5e5fda2af4304f89114db019b44d602481cdec9fda"
+    },
+    {
+      "path": "packages/core/src/index.js",
+      "bytes": 6442,
+      "sha256": "6a1126c06f0692be2e98fb46a0f827f0297ed0c09bf095b627c4df8321f68010"
+    },
+    {
+      "path": "packages/document/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/document/README.md",
+      "bytes": 1101,
+      "sha256": "8ab5c327bfa30c46936bd55280341ef8550dd6106c007754949690cde03c7995"
+    },
+    {
+      "path": "packages/document/package.json",
+      "bytes": 306,
+      "sha256": "ca22df8dbf71da2e7ff96013d00626b863c1226c347bf51dcaf53383c39d78fa"
+    },
+    {
+      "path": "packages/document/src/index.js",
+      "bytes": 12843,
+      "sha256": "d9c03d9a2962562c80cdcf439994fc297f7d711af0ae5590bbde68eab76acc31"
+    },
+    {
+      "path": "packages/kernels/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/kernels/README.md",
+      "bytes": 1169,
+      "sha256": "ee3f79ca46f67d88f4abe85d9c3af05e16969fbbaf93ef1668a99126e85019a2"
+    },
+    {
+      "path": "packages/kernels/package.json",
+      "bytes": 269,
+      "sha256": "71e6fc6ff30e9b286fe59bb35c87422f71babcb972b9e0541a96682ce4cfeb3a"
+    },
+    {
+      "path": "packages/kernels/src/index.js",
+      "bytes": 7552,
+      "sha256": "e80eea9b0c48d098a0ac553f24dddd58f839a788ffc4baee4e5095f534c35e01"
+    },
+    {
+      "path": "packages/paper/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/paper/README.md",
+      "bytes": 958,
+      "sha256": "ffd262b3d9f42ca846ad30f676f29e8482fe0529e11eb6a0eaa26ac3a070446c"
+    },
+    {
+      "path": "packages/paper/package.json",
+      "bytes": 300,
+      "sha256": "94c75f3e31d5d0b84747594ec2703cbe42574df149cb59d37b215d15a3100ffa"
+    },
+    {
+      "path": "packages/paper/src/index.js",
+      "bytes": 1705,
+      "sha256": "5726be5e9fb345656dbc035a9eec4d188a9aa10ee0ccce759c37af581d6e4ddd"
+    },
+    {
+      "path": "packages/pigments/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/pigments/README.md",
+      "bytes": 1114,
+      "sha256": "229d9ba4aa54b2be695270de897218a1904ed0025281719691f4590ae3e98b4d"
+    },
+    {
+      "path": "packages/pigments/package.json",
+      "bytes": 306,
+      "sha256": "0354b8f5cc952c84bbd3c9546043ae94793fa821e84fde50963c5700091a1722"
+    },
+    {
+      "path": "packages/pigments/src/index.js",
+      "bytes": 3403,
+      "sha256": "6c760a2c42e81b2cf669ac5a328d461bf97ea75a3032ee4bdf7d0ae3abbde080"
+    },
+    {
+      "path": "packages/renderer/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/renderer/README.md",
+      "bytes": 1307,
+      "sha256": "38988caa3b0e0a1afd3945aade69a6664fb9eb9977276316388676ab4c0b8b66"
+    },
+    {
+      "path": "packages/renderer/package.json",
+      "bytes": 377,
+      "sha256": "f717c878da191b444d14ec9f2fe7b75b3dddd8f00ae2382f288b5cb573f902a9"
+    },
+    {
+      "path": "packages/renderer/src/index.js",
+      "bytes": 15053,
+      "sha256": "07273478492fdf87944446684b466f486f1bc0e8f753dfd475fa84882ba6215d"
+    },
+    {
+      "path": "packages/simulation/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/simulation/README.md",
+      "bytes": 1391,
+      "sha256": "1471c42bf6288869f69f487dbef107b740f2703eaa842212b3684318ae5b11fc"
+    },
+    {
+      "path": "packages/simulation/package.json",
+      "bytes": 417,
+      "sha256": "b3072bd21e098c229a04e0ea6f3481ac672a233d8711396eb641b66d5954f0e2"
+    },
+    {
+      "path": "packages/simulation/src/index.js",
+      "bytes": 25971,
+      "sha256": "4cfde9b172d38e04517339640b5a2ba4138f920d7b1e1798314cf8fa36a384fa"
+    },
+    {
+      "path": "packages/ui/LICENSE",
+      "bytes": 1080,
+      "sha256": "fb9add0b88c3e2a9daffc984e0e35325e3f74d998d42c3e12c7400f50f39538d"
+    },
+    {
+      "path": "packages/ui/README.md",
+      "bytes": 1207,
+      "sha256": "d1ab767c03287fe714fb7cd94a43c3c46b0dded2214b00bb5a2814ec1157ff81"
+    },
+    {
+      "path": "packages/ui/package.json",
+      "bytes": 333,
+      "sha256": "b970a2c7f9bda8ab91dd5c8f3fee66acfe322de4cc28c23a67603a9f5177910e"
+    },
+    {
+      "path": "packages/ui/src/index.js",
+      "bytes": 14296,
+      "sha256": "1f119a7ac928730bb9dc30e0ef1f951f1f42b719efa035fde9833f50a9cbfd7d"
+    },
+    {
+      "path": "packages/ui/src/studio.css",
+      "bytes": 31878,
+      "sha256": "d3066b3a3b63a394dbdd78c098351b3bc03caa6157d8dddd690e2e68c7d47263"
+    },
+    {
+      "path": "release/packages/pigmentlab-brushes-1.0.0.tgz",
+      "bytes": 4545,
+      "sha256": "831700e9c3e5473390062664e5a67c88269971647d2f8ef045ee1d439a101f4f"
+    },
+    {
+      "path": "release/packages/pigmentlab-core-1.0.0.tgz",
+      "bytes": 3822,
+      "sha256": "3584051e7d2f272199d23566ecf84ece0019bfd81406b2741ab85b55e6fa37e5"
+    },
+    {
+      "path": "release/packages/pigmentlab-document-1.0.0.tgz",
+      "bytes": 5523,
+      "sha256": "72e6f03976048f0577b754e2b792645db9a1db4527b7759e5eecf2b57afce84c"
+    },
+    {
+      "path": "release/packages/pigmentlab-kernels-1.0.0.tgz",
+      "bytes": 4106,
+      "sha256": "4d4bf016169377f42e62fca3c8f3142f6082d75879041ecc12a5feecec55e7d3"
+    },
+    {
+      "path": "release/packages/pigmentlab-paper-1.0.0.tgz",
+      "bytes": 2181,
+      "sha256": "5cd3fe312bf78583cf9af3b56d5ee50d0b89e976119de7d90f3d00e22fb8e783"
+    },
+    {
+      "path": "release/packages/pigmentlab-pigments-1.0.0.tgz",
+      "bytes": 3104,
+      "sha256": "3c5dfad39f66fafc7ec400dc31d64bc66168809286182d9870b000475b453b70"
+    },
+    {
+      "path": "release/packages/pigmentlab-renderer-1.0.0.tgz",
+      "bytes": 6703,
+      "sha256": "2295ce06bfc5922c7e89c76adc5b1f0b631fae14f31e600b1ff2ef7500bb0334"
+    },
+    {
+      "path": "release/packages/pigmentlab-simulation-1.0.0.tgz",
+      "bytes": 8577,
+      "sha256": "b22817cdb5756230ee1c4b54045e0a65879bc027f44a8df4eaccce4ac95e6a72"
+    },
+    {
+      "path": "release/packages/pigmentlab-ui-1.0.0.tgz",
+      "bytes": 13413,
+      "sha256": "a0cec1a1b12c580072f5d2ae754b245ecae167b4cd88ab97d0b232f5c11036df"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 2673,
+      "sha256": "f4b450f0e8b6ee424745cd4f6f1ce8409414ac46dc8432fc8dd2602f8d2ea205"
+    },
+    {
+      "path": "scripts/check.mjs",
+      "bytes": 545,
+      "sha256": "d82daddd839b2de2bacf1225b4013ec5c885e60ba8f7ad92f3ec93e595f6119c"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 1572,
+      "sha256": "30210c5c359f0b429ad2976e7e66d4432a09c60ce48eb2f1625ec41c94b738c3"
+    },
+    {
+      "path": "tests/browser_test.py",
+      "bytes": 17203,
+      "sha256": "5ec7317f8f41b0da4397dd45dc5e4ab6e825e76178c658eaec86e1e4e1682d6b"
+    },
+    {
+      "path": "tests/engines.test.js",
+      "bytes": 15294,
+      "sha256": "ca7fe7fdbe56b700ca653de92d1c1f0561d01515392f14514d96b589262c140d"
+    },
+    {
+      "path": "tests/examples_test.py",
+      "bytes": 3878,
+      "sha256": "77d1a45f8bae0337e65727a13da92c801ea6ef2a2c45d54d06f1393ab939a678"
+    },
+    {
+      "path": "tests/gpu-checks.js",
+      "bytes": 5079,
+      "sha256": "a47ccef28bf0753c3a7cdbfb76ab939c5e24ac573f2fdb712772f50731cb40d4"
+    },
+    {
+      "path": "tests/gpu-smoke.html",
+      "bytes": 1429,
+      "sha256": "0860b0fd7da7e31597b2b4c6de790e400a10ae8b6427e3ee3cc30dcc90ff68a8"
+    },
+    {
+      "path": "tests/shaders.test.js",
+      "bytes": 2698,
+      "sha256": "571ffa3c9519e8c5dee2bfa1dc6a98bed88c9ef8d25687ae8abd01e1271aec79"
+    }
+  ],
+  "provenance": {
+    "originalManifest": "docs/ORIGINAL_RELEASE_MANIFEST.json",
+    "sourceImport": "docs/SOURCE_IMPORT.json",
+    "run": "https://github.com/wieslawsoltes/PigmentLab/actions/runs/35508237025",
+    "generatedBinaryArtifacts": "Rebuilt from the verified source in GitHub Actions; not copied from the original archive"
+  },
+  "freshBrowserReport": {
+    "checks": [
+      {
+        "name": "Application boot and three editable sample layers",
+        "pass": true
+      },
+      {
+        "name": "Nine independent package exports are present",
+        "pass": true
+      },
+      {
+        "name": "Sample pigment fields are nonzero and finite",
+        "pass": true
+      },
+      {
+        "name": "Light theme switches at runtime",
+        "pass": true
+      },
+      {
+        "name": "Mobile layout does not overflow horizontally",
+        "pass": true
+      },
+      {
+        "name": "Mobile brush drawer opens",
+        "pass": true
+      },
+      {
+        "name": "Mobile pigment drawer opens exclusively",
+        "pass": true
+      },
+      {
+        "name": "New-document dialog creates requested editable dimensions",
+        "pass": true
+      },
+      {
+        "name": "Simulation pause toggles",
+        "pass": true
+      },
+      {
+        "name": "Real mouse input deposits wet pigment",
+        "pass": true
+      },
+      {
+        "name": "Undo restores exact empty fields",
+        "pass": true
+      },
+      {
+        "name": "Redo restores exact IEEE-754 fields",
+        "pass": true
+      },
+      {
+        "name": "Dry transfers pigment without deleting it",
+        "pass": true
+      },
+      {
+        "name": "Wet adds water to material fields",
+        "pass": true
+      },
+      {
+        "name": "Eraser removes actual material",
+        "pass": true
+      },
+      {
+        "name": "Masking fluid writes the resist channel",
+        "pass": true
+      },
+      {
+        "name": "Remove masking fluid clears resist channel",
+        "pass": true
+      },
+      {
+        "name": "Rectangle selection is rasterized",
+        "pass": true
+      },
+      {
+        "name": "Selection rejects paint outside its bounds",
+        "pass": true
+      },
+      {
+        "name": "Selection permits paint inside its bounds",
+        "pass": true
+      },
+      {
+        "name": "Deselect restores full editing area",
+        "pass": true
+      },
+      {
+        "name": "Oil brush creates impasto",
+        "pass": true
+      },
+      {
+        "name": "Double horizontal flip preserves exact material state",
+        "pass": true
+      },
+      {
+        "name": "Duplicate layer copies all material channels",
+        "pass": true
+      },
+      {
+        "name": "Native double-click layer rename works",
+        "pass": true
+      },
+      {
+        "name": "Layer ordering is editable",
+        "pass": true
+      },
+      {
+        "name": "Layer visibility toggles",
+        "pass": true
+      },
+      {
+        "name": "Layer opacity applies",
+        "pass": true
+      },
+      {
+        "name": "Layer blend mode applies",
+        "pass": true
+      },
+      {
+        "name": "Locked layer rejects brush input",
+        "pass": true
+      },
+      {
+        "name": "Alpha lock rejects paint on transparent cells",
+        "pass": true
+      },
+      {
+        "name": "Contiguous fill adds material to a blank layer",
+        "pass": true
+      },
+      {
+        "name": "Fill participates in document undo",
+        "pass": true
+      },
+      {
+        "name": "Brush creator adds a reusable preset",
+        "pass": true
+      },
+      {
+        "name": "Pigment-mixing palette selects its computed mixture",
+        "pass": true
+      },
+      {
+        "name": "Paper properties affect the engine substrate",
+        "pass": true
+      },
+      {
+        "name": "Browser project serialization is bit-exact across all layers",
+        "pass": true
+      },
+      {
+        "name": "Saved project reopens with editable fields",
+        "pass": true
+      },
+      {
+        "name": "PNG, JPEG, and WebP exports decode at requested canvas resolution",
+        "pass": true,
+        "details": [
+          {
+            "type": "image/png",
+            "size": 25751,
+            "w": 128,
+            "h": 128
+          },
+          {
+            "type": "image/jpeg",
+            "size": 6116,
+            "w": 128,
+            "h": 128
+          },
+          {
+            "type": "image/webp",
+            "size": 5316,
+            "w": 128,
+            "h": 128
+          }
+        ]
+      },
+      {
+        "name": "Heightmap exports a material-resolution PNG",
+        "pass": true
+      },
+      {
+        "name": "Raster image import creates a pigment layer",
+        "pass": true
+      },
+      {
+        "name": "Layer deletion applies through confirmation",
+        "pass": true
+      },
+      {
+        "name": "Undo restores deleted layer and data",
+        "pass": true
+      },
+      {
+        "name": "Save button downloads an editable .pigment file",
+        "pass": true
+      },
+      {
+        "name": "File picker restores a downloaded project",
+        "pass": true
+      },
+      {
+        "name": "Export dialog downloads a real PNG",
+        "pass": true
+      },
+      {
+        "name": "Reference image loads into the pinned panel",
+        "pass": true
+      },
+      {
+        "name": "Reference panel can be closed",
+        "pass": true
+      },
+      {
+        "name": "Brush JSON export/import preserves the editable preset",
+        "pass": true
+      },
+      {
+        "name": "Canvas rotation changes only the view",
+        "pass": true
+      },
+      {
+        "name": "Keyboard tool shortcuts dispatch",
+        "pass": true
+      },
+      {
+        "name": "Painting process records to a nonempty browser-encoded video",
+        "pass": true
+      },
+      {
+        "name": "No unhandled JavaScript exceptions",
+        "pass": true,
+        "details": []
+      },
+      {
+        "name": "No unexpected browser console errors",
+        "pass": true,
+        "details": []
+      }
+    ],
+    "passed": 54,
+    "total": 54,
+    "inline": true,
+    "errors": [],
+    "consoleErrors": [],
+    "gpuExecuted": false
+  },
+  "freshExampleReport": {
+    "independentExample": "PASSED",
+    "studioLoaded": false,
+    "packageCount": 9,
+    "pointerPaintMass": 824.5122924656064,
+    "dryAndClear": "PASSED",
+    "gpuHarness": {
+      "status": "SKIPPED",
+      "backend": null,
+      "checks": [],
+      "errors": [],
+      "reason": "WebGPU is not exposed in this context."
+    },
+    "browser": "134.0.6998.35",
+    "errors": []
+  }
+}

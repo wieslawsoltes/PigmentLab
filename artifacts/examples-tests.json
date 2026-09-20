@@ -1,0 +1,16 @@
+{
+  "independentExample": "PASSED",
+  "studioLoaded": false,
+  "packageCount": 9,
+  "pointerPaintMass": 824.5122924656064,
+  "dryAndClear": "PASSED",
+  "gpuHarness": {
+    "status": "SKIPPED",
+    "backend": null,
+    "checks": [],
+    "errors": [],
+    "reason": "WebGPU is not exposed in this context."
+  },
+  "browser": "134.0.6998.35",
+  "errors": []
+}

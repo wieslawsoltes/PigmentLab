@@ -1,0 +1,5 @@
+200 / text/html; charset=utf-8
+200 /packages/ui/src/studio.css text/css; charset=utf-8
+200 /packages/simulation/src/index.js text/javascript; charset=utf-8
+200 /tests/gpu-smoke.html text/html; charset=utf-8
+200 /examples/minimal-paint.html text/html; charset=utf-8

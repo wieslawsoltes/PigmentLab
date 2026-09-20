@@ -1,0 +1,17 @@
+{
+  "name": "@pigmentlab/pigments",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PigmentLab standalone pigments package",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@pigmentlab/core": "1.0.0"
+  }
+}

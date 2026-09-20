@@ -1,0 +1,5 @@
+
+> pigmentlab@1.0.0 check
+> node scripts/check.mjs
+
+All JavaScript sources pass syntax checks.

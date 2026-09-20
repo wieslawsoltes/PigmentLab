@@ -1,0 +1,248 @@
+{
+  "checks": [
+    {
+      "name": "Application boot and three editable sample layers",
+      "pass": true
+    },
+    {
+      "name": "Nine independent package exports are present",
+      "pass": true
+    },
+    {
+      "name": "Sample pigment fields are nonzero and finite",
+      "pass": true
+    },
+    {
+      "name": "Light theme switches at runtime",
+      "pass": true
+    },
+    {
+      "name": "Mobile layout does not overflow horizontally",
+      "pass": true
+    },
+    {
+      "name": "Mobile brush drawer opens",
+      "pass": true
+    },
+    {
+      "name": "Mobile pigment drawer opens exclusively",
+      "pass": true
+    },
+    {
+      "name": "New-document dialog creates requested editable dimensions",
+      "pass": true
+    },
+    {
+      "name": "Simulation pause toggles",
+      "pass": true
+    },
+    {
+      "name": "Real mouse input deposits wet pigment",
+      "pass": true
+    },
+    {
+      "name": "Undo restores exact empty fields",
+      "pass": true
+    },
+    {
+      "name": "Redo restores exact IEEE-754 fields",
+      "pass": true
+    },
+    {
+      "name": "Dry transfers pigment without deleting it",
+      "pass": true
+    },
+    {
+      "name": "Wet adds water to material fields",
+      "pass": true
+    },
+    {
+      "name": "Eraser removes actual material",
+      "pass": true
+    },
+    {
+      "name": "Masking fluid writes the resist channel",
+      "pass": true
+    },
+    {
+      "name": "Remove masking fluid clears resist channel",
+      "pass": true
+    },
+    {
+      "name": "Rectangle selection is rasterized",
+      "pass": true
+    },
+    {
+      "name": "Selection rejects paint outside its bounds",
+      "pass": true
+    },
+    {
+      "name": "Selection permits paint inside its bounds",
+      "pass": true
+    },
+    {
+      "name": "Deselect restores full editing area",
+      "pass": true
+    },
+    {
+      "name": "Oil brush creates impasto",
+      "pass": true
+    },
+    {
+      "name": "Double horizontal flip preserves exact material state",
+      "pass": true
+    },
+    {
+      "name": "Duplicate layer copies all material channels",
+      "pass": true
+    },
+    {
+      "name": "Native double-click layer rename works",
+      "pass": true
+    },
+    {
+      "name": "Layer ordering is editable",
+      "pass": true
+    },
+    {
+      "name": "Layer visibility toggles",
+      "pass": true
+    },
+    {
+      "name": "Layer opacity applies",
+      "pass": true
+    },
+    {
+      "name": "Layer blend mode applies",
+      "pass": true
+    },
+    {
+      "name": "Locked layer rejects brush input",
+      "pass": true
+    },
+    {
+      "name": "Alpha lock rejects paint on transparent cells",
+      "pass": true
+    },
+    {
+      "name": "Contiguous fill adds material to a blank layer",
+      "pass": true
+    },
+    {
+      "name": "Fill participates in document undo",
+      "pass": true
+    },
+    {
+      "name": "Brush creator adds a reusable preset",
+      "pass": true
+    },
+    {
+      "name": "Pigment-mixing palette selects its computed mixture",
+      "pass": true
+    },
+    {
+      "name": "Paper properties affect the engine substrate",
+      "pass": true
+    },
+    {
+      "name": "Browser project serialization is bit-exact across all layers",
+      "pass": true
+    },
+    {
+      "name": "Saved project reopens with editable fields",
+      "pass": true
+    },
+    {
+      "name": "PNG, JPEG, and WebP exports decode at requested canvas resolution",
+      "pass": true,
+      "details": [
+        {
+          "type": "image/png",
+          "size": 25751,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "type": "image/jpeg",
+          "size": 6116,
+          "w": 128,
+          "h": 128
+        },
+        {
+          "type": "image/webp",
+          "size": 5316,
+          "w": 128,
+          "h": 128
+        }
+      ]
+    },
+    {
+      "name": "Heightmap exports a material-resolution PNG",
+      "pass": true
+    },
+    {
+      "name": "Raster image import creates a pigment layer",
+      "pass": true
+    },
+    {
+      "name": "Layer deletion applies through confirmation",
+      "pass": true
+    },
+    {
+      "name": "Undo restores deleted layer and data",
+      "pass": true
+    },
+    {
+      "name": "Save button downloads an editable .pigment file",
+      "pass": true
+    },
+    {
+      "name": "File picker restores a downloaded project",
+      "pass": true
+    },
+    {
+      "name": "Export dialog downloads a real PNG",
+      "pass": true
+    },
+    {
+      "name": "Reference image loads into the pinned panel",
+      "pass": true
+    },
+    {
+      "name": "Reference panel can be closed",
+      "pass": true
+    },
+    {
+      "name": "Brush JSON export/import preserves the editable preset",
+      "pass": true
+    },
+    {
+      "name": "Canvas rotation changes only the view",
+      "pass": true
+    },
+    {
+      "name": "Keyboard tool shortcuts dispatch",
+      "pass": true
+    },
+    {
+      "name": "Painting process records to a nonempty browser-encoded video",
+      "pass": true
+    },
+    {
+      "name": "No unhandled JavaScript exceptions",
+      "pass": true,
+      "details": []
+    },
+    {
+      "name": "No unexpected browser console errors",
+      "pass": true,
+      "details": []
+    }
+  ],
+  "passed": 54,
+  "total": 54,
+  "inline": true,
+  "errors": [],
+  "consoleErrors": [],
+  "gpuExecuted": false
+}

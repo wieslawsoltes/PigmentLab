@@ -1,6 +1,0 @@
-{
-  "parts": 11,
-  "sha256": "69fcccf4634f8ca42d86c2a9164cefbd8b826d192e9ab6eb1bfdfbf83b2db6bf",
-  "originalZipSha256": "2b660a481d087ba0ad01ecdf2e8dca634118b231394d896d0388b62a0900225d",
-  "format": "base64 of tar.xz; original UTF-8 source; generated binaries rebuilt in CI"
-}

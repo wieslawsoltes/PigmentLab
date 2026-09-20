@@ -1,0 +1,21 @@
+{
+  "medium": "oil",
+  "size": 48,
+  "opacity": 0.85,
+  "water": 0,
+  "load": 0.56,
+  "hardness": 0.88,
+  "grain": 0.25,
+  "spacing": 0.15,
+  "aspect": 0.48,
+  "angle": 0,
+  "shape": 2,
+  "thickness": 0.75,
+  "jitter": 0.04,
+  "pressure": 0.65,
+  "stabilizer": 0.18,
+  "id": "pgl-mu9qpjoe-dqcindd5u6h",
+  "name": "Integration bristle",
+  "format": "pigmentlab-brush",
+  "version": 1
+}

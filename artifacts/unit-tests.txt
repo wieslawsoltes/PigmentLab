@@ -1,0 +1,266 @@
+
+> pigmentlab@1.0.0 test
+> node --test tests/*.test.js
+
+TAP version 13
+# Subtest: integer noise and PRNG are deterministic and bounded
+ok 1 - integer noise and PRNG are deterministic and bounded
+  ---
+  duration_ms: 1.968329
+  type: 'test'
+  ...
+# Subtest: tile activation clips boundaries and expands a halo
+ok 2 - tile activation clips boundaries and expands a halo
+  ---
+  duration_ms: 0.318893
+  type: 'test'
+  ...
+# Subtest: dab binning preserves order and covers rotated brush bounds
+ok 3 - dab binning preserves order and covers rotated brush bounds
+  ---
+  duration_ms: 1.057976
+  type: 'test'
+  ...
+# Subtest: rectangle, ellipse and polygon selections rasterize correctly
+ok 4 - rectangle, ellipse and polygon selections rasterize correctly
+  ---
+  duration_ms: 1.267105
+  type: 'test'
+  ...
+# Subtest: K/S conversion reconstructs studio swatch RGB values
+ok 5 - K/S conversion reconstructs studio swatch RGB values
+  ---
+  duration_ms: 0.420883
+  type: 'test'
+  ...
+# Subtest: pigment mixing is symmetric and differs from additive RGB blending
+ok 6 - pigment mixing is symmetric and differs from additive RGB blending
+  ---
+  duration_ms: 0.287053
+  type: 'test'
+  ...
+# Subtest: HSV conversions retain hue and brightness
+ok 7 - HSV conversions retain hue and brightness
+  ---
+  duration_ms: 0.473751
+  type: 'test'
+  ...
+# Subtest: all paper presets are deterministic and finite
+ok 8 - all paper presets are deterministic and finite
+  ---
+  duration_ms: 10.118647
+  type: 'test'
+  ...
+# Subtest: stroke resampling is invariant to event rate on a straight unfiltered stroke
+ok 9 - stroke resampling is invariant to event rate on a straight unfiltered stroke
+  ---
+  duration_ms: 2.058776
+  type: 'test'
+  ...
+# Subtest: radial symmetry emits six copies and reflects stroke motion
+ok 10 - radial symmetry emits six copies and reflects stroke motion
+  ---
+  duration_ms: 0.888712
+  type: 'test'
+  ...
+# Subtest: brush preset validation rejects non-finite input
+ok 11 - brush preset validation rejects non-finite input
+  ---
+  duration_ms: 0.662922
+  type: 'test'
+  ...
+# Subtest: watercolor stamping creates distinct water and mobile pigment fields
+ok 12 - watercolor stamping creates distinct water and mobile pigment fields
+  ---
+  duration_ms: 3.044128
+  type: 'test'
+  ...
+# Subtest: oil stamping creates deposited pigment and impasto without water
+ok 13 - oil stamping creates deposited pigment and impasto without water
+  ---
+  duration_ms: 3.190179
+  type: 'test'
+  ...
+# Subtest: selection and masking fluid resist brush deposition
+ok 14 - selection and masking fluid resist brush deposition
+  ---
+  duration_ms: 4.17494
+  type: 'test'
+  ...
+# Subtest: alpha lock prevents pigment on an empty layer
+ok 15 - alpha lock prevents pigment on an empty layer
+  ---
+  duration_ms: 3.838456
+  type: 'test'
+  ...
+# Subtest: eraser removes pigment mass
+ok 16 - eraser removes pigment mass
+  ---
+  duration_ms: 2.388029
+  type: 'test'
+  ...
+# Subtest: dry operation preserves pigment while removing surface water
+ok 17 - dry operation preserves pigment while removing surface water
+  ---
+  duration_ms: 2.84595
+  type: 'test'
+  ...
+# Subtest: transport + deposition conserve total pigment over 100 steps
+ok 18 - transport + deposition conserve total pigment over 100 steps
+  ---
+  duration_ms: 56.527993
+  type: 'test'
+  ...
+# Subtest: dry watercolor can be rewetted
+ok 19 - dry watercolor can be rewetted
+  ---
+  duration_ms: 6.906456
+  type: 'test'
+  ...
+# Subtest: mask blocks lateral pigment transport
+ok 20 - mask blocks lateral pigment transport
+  ---
+  duration_ms: 25.274455
+  type: 'test'
+  ...
+# Subtest: all 17 brush tool kernels preserve finite non-negative state
+ok 21 - all 17 brush tool kernels preserve finite non-negative state
+  ---
+  duration_ms: 56.650401
+  type: 'test'
+  ...
+# Subtest: lossless packed fields survive zero runs and IEEE-754 bit patterns
+ok 22 - lossless packed fields survive zero runs and IEEE-754 bit patterns
+  ---
+  duration_ms: 1.982805
+  type: 'test'
+  ...
+# Subtest: corrupt field streams are rejected instead of over-allocating
+ok 23 - corrupt field streams are rejected instead of over-allocating
+  ---
+  duration_ms: 0.249033
+  type: 'test'
+  ...
+# Subtest: editable project binary round-trip preserves fields and metadata
+ok 24 - editable project binary round-trip preserves fields and metadata
+  ---
+  duration_ms: 5.521402
+  type: 'test'
+  ...
+# Subtest: non-project and truncated files are rejected
+ok 25 - non-project and truncated files are rejected
+  ---
+  duration_ms: 2.113027
+  type: 'test'
+  ...
+# Subtest: history provides exact undo/redo across async capture
+ok 26 - history provides exact undo/redo across async capture
+  ---
+  duration_ms: 1.040674
+  type: 'test'
+  ...
+# Subtest: identity affine transform is exact and horizontal flip has no off-by-one loss
+ok 27 - identity affine transform is exact and horizontal flip has no off-by-one loss
+  ---
+  duration_ms: 11.972512
+  type: 'test'
+  ...
+# Subtest: flood fill honors region boundaries and selection
+ok 28 - flood fill honors region boundaries and selection
+  ---
+  duration_ms: 1.569647
+  type: 'test'
+  ...
+# Subtest: RGBA image import reconstructs opacity and color
+ok 29 - RGBA image import reconstructs opacity and color
+  ---
+  duration_ms: 0.698097
+  type: 'test'
+  ...
+# Subtest: demo paintings contain three finite independently editable layers
+ok 30 - demo paintings contain three finite independently editable layers
+  ---
+  duration_ms: 51.001662
+  type: 'test'
+  ...
+# Subtest: viewport zoom remains anchored to the cursor under rotation
+ok 31 - viewport zoom remains anchored to the cursor under rotation
+  ---
+  duration_ms: 0.488057
+  type: 'test'
+  ...
+# Subtest: semantic commands expose metadata and honor enabled state
+ok 32 - semantic commands expose metadata and honor enabled state
+  ---
+  duration_ms: 0.377592
+  type: 'test'
+  ...
+# Subtest: Drying a selection does not suspend wet material outside it
+ok 33 - Drying a selection does not suspend wet material outside it
+  ---
+  duration_ms: 5.549985
+  type: 'test'
+  ...
+# Subtest: Alpha-locked fill does not create material in transparent cells
+ok 34 - Alpha-locked fill does not create material in transparent cells
+  ---
+  duration_ms: 0.464423
+  type: 'test'
+  ...
+# Subtest: Imported brush dynamics are clamped to supported domains
+ok 35 - Imported brush dynamics are clamped to supported domains
+  ---
+  duration_ms: 0.296812
+  type: 'test'
+  ...
+# Subtest: Project decoder rejects HTML-injection layer identifiers
+ok 36 - Project decoder rejects HTML-injection layer identifiers
+  ---
+  duration_ms: 0.894052
+  type: 'test'
+  ...
+# Subtest: Project decoder whitelists metadata rather than restoring arbitrary object properties
+ok 37 - Project decoder whitelists metadata rather than restoring arbitrary object properties
+  ---
+  duration_ms: 0.862533
+  type: 'test'
+  ...
+# Subtest: simulation WGSL contains no reserved-word identifiers
+ok 38 - simulation WGSL contains no reserved-word identifiers
+  ---
+  duration_ms: 3.053395
+  type: 'test'
+  ...
+# Subtest: simulation cell layout is three 16-byte vectors
+ok 39 - simulation cell layout is three 16-byte vectors
+  ---
+  duration_ms: 0.320916
+  type: 'test'
+  ...
+# Subtest: compositor WGSL contains no reserved-word identifiers
+ok 40 - compositor WGSL contains no reserved-word identifiers
+  ---
+  duration_ms: 0.332157
+  type: 'test'
+  ...
+# Subtest: compositor cell layout is three 16-byte vectors
+ok 41 - compositor cell layout is three 16-byte vectors
+  ---
+  duration_ms: 0.18829
+  type: 'test'
+  ...
+# Subtest: Compute entrypoints declare bounded workgroups and nonaliasing input/output bindings
+ok 42 - Compute entrypoints declare bounded workgroups and nonaliasing input/output bindings
+  ---
+  duration_ms: 0.52167
+  type: 'test'
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 391.925582

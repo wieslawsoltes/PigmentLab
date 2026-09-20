@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+artifacts/browser-failure.png
+artifacts/boot-error.png
+examples/headless-output.pigment

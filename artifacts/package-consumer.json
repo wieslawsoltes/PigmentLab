@@ -1,0 +1,139 @@
+{
+  "passed": true,
+  "packages": [
+    {
+      "name": "core",
+      "exports": [
+        "ActiveTiles",
+        "BLEND_MODES",
+        "CELL_BYTES",
+        "CELL_FLOATS",
+        "MAX_LAYERS",
+        "SerialQueue",
+        "Signal",
+        "TILE_SIZE",
+        "align",
+        "binDabs",
+        "bounds",
+        "clamp",
+        "createSelection",
+        "finite",
+        "hash",
+        "invariant",
+        "lerp",
+        "polygonContains",
+        "rng",
+        "smoothstep",
+        "uid",
+        "valueNoise"
+      ]
+    },
+    {
+      "name": "pigments",
+      "exports": [
+        "PALETTE",
+        "blendChannel",
+        "cellColor",
+        "hexToKS",
+        "hexToRgb",
+        "hsvToRgb",
+        "ksToRgb",
+        "linearToSrgb",
+        "mixPigments",
+        "rgbToHex",
+        "rgbToHsv",
+        "rgbToKS",
+        "srgbToLinear"
+      ]
+    },
+    {
+      "name": "paper",
+      "exports": [
+        "PAPERS",
+        "createPaper",
+        "paperAt"
+      ]
+    },
+    {
+      "name": "brushes",
+      "exports": [
+        "MEDIA",
+        "PRESETS",
+        "Stroke",
+        "TOOLS",
+        "mirrorDabs",
+        "packDabs",
+        "utilityBrush",
+        "validateBrush"
+      ]
+    },
+    {
+      "name": "kernels",
+      "exports": [
+        "simulationWGSL"
+      ]
+    },
+    {
+      "name": "simulation",
+      "exports": [
+        "CPUBackend",
+        "CPUSurface",
+        "DEFAULT_SIMULATION",
+        "GPUBackend",
+        "GPUSurface",
+        "createBackend",
+        "floodFill",
+        "importPixels",
+        "stampCPU",
+        "stepCPU",
+        "transformSurface"
+      ]
+    },
+    {
+      "name": "renderer",
+      "exports": [
+        "CPURenderer",
+        "GPURenderer",
+        "compositorWGSL",
+        "createRenderer",
+        "exportImage",
+        "heightmap",
+        "layerThumbnail"
+      ]
+    },
+    {
+      "name": "document",
+      "exports": [
+        "AutosaveStore",
+        "History",
+        "captureDocument",
+        "createLayer",
+        "decodeProject",
+        "download",
+        "encodeProject",
+        "layerMetadata",
+        "materializeSnapshot",
+        "packFloats",
+        "snapshotBytes",
+        "unpackFloats"
+      ]
+    },
+    {
+      "name": "ui",
+      "exports": [
+        "$",
+        "$$",
+        "CanvasInput",
+        "CommandRegistry",
+        "Viewport",
+        "bindRanges",
+        "button",
+        "dialog",
+        "escapeHTML",
+        "icon",
+        "range",
+        "toast"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+[
+  {
+    "id": "@pigmentlab/brushes@1.0.0",
+    "name": "@pigmentlab/brushes",
+    "version": "1.0.0",
+    "size": 4545,
+    "unpackedSize": 11712,
+    "shasum": "20bb19665eda161eb1d21382fac95968941b53cb",
+    "integrity": "sha512-a/cSXHwQxJeCNLBTlOn26I79OVS+ctudcOELoDMYdtoBXbFUP6f+5cF5f3qFmm3zBjMPdHmLI7e7jHJjelfW3Q==",
+    "filename": "pigmentlab-brushes-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1036,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 341,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 9255,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/core@1.0.0",
+    "name": "@pigmentlab/core",
+    "version": "1.0.0",
+    "size": 3822,
+    "unpackedSize": 8911,
+    "shasum": "88ba033200e6dbd8db301ced0ac2097b5b674b75",
+    "integrity": "sha512-PO97FK0bibPKQR18guaJXfyVZInZkpEnaNFbmYfwGo5g+sH30X0q5BRxtzfEk55m9wXKkNm70e9t39v4xRBAPw==",
+    "filename": "pigmentlab-core-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1126,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 263,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 6442,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/document@1.0.0",
+    "name": "@pigmentlab/document",
+    "version": "1.0.0",
+    "size": 5523,
+    "unpackedSize": 15330,
+    "shasum": "1ebafd748c8c51807e4e182f056cc6348f404db4",
+    "integrity": "sha512-PlUyByQ/Z1qwOglcdyMUM1r8vL8w8StKMOe8Po2pBjHRHHe96/9mywnpbDTPPOSLJrOdN2zOjc5lQR+PGOHlCw==",
+    "filename": "pigmentlab-document-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1101,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 306,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 12843,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/kernels@1.0.0",
+    "name": "@pigmentlab/kernels",
+    "version": "1.0.0",
+    "size": 4106,
+    "unpackedSize": 10070,
+    "shasum": "ed2b6fc28f343fed5a879a0ff4cba4cb9c91a20a",
+    "integrity": "sha512-bcDMCFbHGYFrl3ewzMdx8MOoDI0ha6M/34mp+M5gQCn7w5i+VCaHPVoAfi4+7lcpLpBN+zpkJlOUInSH9CX7+Q==",
+    "filename": "pigmentlab-kernels-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1169,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 269,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 7552,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/paper@1.0.0",
+    "name": "@pigmentlab/paper",
+    "version": "1.0.0",
+    "size": 2181,
+    "unpackedSize": 4043,
+    "shasum": "0ccb593b6e6697feb6fee4ecc1ccd6a850266a00",
+    "integrity": "sha512-+IEMrK9a1bQk9spMBlRuNLfgoO9fXN/WMf4ZEvn2Obe9tSIpjvbLoUe1xvkiOIwxGcg6B7GoQkNwz8AQrhHJFQ==",
+    "filename": "pigmentlab-paper-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 958,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 300,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 1705,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/pigments@1.0.0",
+    "name": "@pigmentlab/pigments",
+    "version": "1.0.0",
+    "size": 3104,
+    "unpackedSize": 5903,
+    "shasum": "548c457e51a4b68cfe7d93bb4fe5024478f7577b",
+    "integrity": "sha512-tZElyPGP3332a9g4nQOX7Z6PVNUKCTMTbdiBeu+fWxb9sOaGCaBsm2odaSRYYgbL3cK6/2UiHiS/D6OcaosNbQ==",
+    "filename": "pigmentlab-pigments-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1114,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 306,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 3403,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/renderer@1.0.0",
+    "name": "@pigmentlab/renderer",
+    "version": "1.0.0",
+    "size": 6703,
+    "unpackedSize": 17817,
+    "shasum": "5f6773957f5ca3f7c49e02e6a72283716e7e3f81",
+    "integrity": "sha512-L2NnaH7wZKRF4XKuRoMGanck3afilz1gS6gg79DyqwcvcBTEWOvVj/cTC4KvJVKhRzdQ+tDZ1tRDErPcvokh1w==",
+    "filename": "pigmentlab-renderer-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1307,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 377,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 15053,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/simulation@1.0.0",
+    "name": "@pigmentlab/simulation",
+    "version": "1.0.0",
+    "size": 8577,
+    "unpackedSize": 28859,
+    "shasum": "dc0aa763351aca62986b282e390ab3c477bdc95c",
+    "integrity": "sha512-6cNmJ2yPBrFfuHW62rGsrZPGemIUwHFk9HV/o1XpJoZN8qUKpbDAFexorUHqt97orryiv+YRTvnkr9J3TwLAYg==",
+    "filename": "pigmentlab-simulation-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1391,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 417,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 25971,
+        "mode": 420
+      }
+    ],
+    "entryCount": 4,
+    "bundled": []
+  },
+  {
+    "id": "@pigmentlab/ui@1.0.0",
+    "name": "@pigmentlab/ui",
+    "version": "1.0.0",
+    "size": 13413,
+    "unpackedSize": 48794,
+    "shasum": "dcf540ab015653399ea01237ed2ac1f5c53bc6c1",
+    "integrity": "sha512-WKxwU1SaipjOZpf9NW98kUNWD1Mnwom+E/XClcaHSIM1F52fD2eF3MepacX3lOI7JMIVG+d16y+KAnvoBc9fMQ==",
+    "filename": "pigmentlab-ui-1.0.0.tgz",
+    "files": [
+      {
+        "path": "LICENSE",
+        "size": 1080,
+        "mode": 420
+      },
+      {
+        "path": "README.md",
+        "size": 1207,
+        "mode": 420
+      },
+      {
+        "path": "package.json",
+        "size": 333,
+        "mode": 420
+      },
+      {
+        "path": "src/index.js",
+        "size": 14296,
+        "mode": 420
+      },
+      {
+        "path": "src/studio.css",
+        "size": 31878,
+        "mode": 420
+      }
+    ],
+    "entryCount": 5,
+    "bundled": []
+  }
+]

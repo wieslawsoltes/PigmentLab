@@ -1,0 +1,15 @@
+{
+  "name": "@pigmentlab/kernels",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PigmentLab standalone kernels package",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "license": "MIT",
+  "dependencies": {}
+}

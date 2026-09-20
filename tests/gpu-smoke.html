@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PigmentLab · GPU conformance checks</title>
+<style>body{font:15px/1.6 system-ui;background:#202829;color:#e7edeb;margin:36px;max-width:960px}h1{font-size:26px}pre{white-space:pre-wrap;border:1px solid #475050;padding:20px}canvas{width:384px;height:256px;border:1px solid #657272}a{color:#e5ab89}</style>
+<script type="importmap">{"imports":{"@pigmentlab/core":"../packages/core/src/index.js","@pigmentlab/pigments":"../packages/pigments/src/index.js","@pigmentlab/paper":"../packages/paper/src/index.js","@pigmentlab/kernels":"../packages/kernels/src/index.js","@pigmentlab/simulation":"../packages/simulation/src/index.js","@pigmentlab/renderer":"../packages/renderer/src/index.js"}}</script>
+</head><body><h1>PigmentLab GPU conformance checks</h1><p>This page compiles the real compute and rendering pipelines, compares material results with the CPU oracle, and reports unsupported adapters as SKIPPED, never as a pass. Serve over localhost or HTTPS.</p><canvas id="canvas" width="192" height="128"></canvas><pre id="report">Starting…</pre><script type="module">
+import { runGPUChecks } from './gpu-checks.js';
+window.result = await runGPUChecks(document.getElementById('canvas'));
+document.getElementById('report').textContent=JSON.stringify(window.result,null,2);
+</script></body></html>

@@ -1,0 +1,55 @@
+PASS Application boot and three editable sample layers
+PASS Nine independent package exports are present
+PASS Sample pigment fields are nonzero and finite
+PASS Light theme switches at runtime
+PASS Mobile layout does not overflow horizontally
+PASS Mobile brush drawer opens
+PASS Mobile pigment drawer opens exclusively
+PASS New-document dialog creates requested editable dimensions
+PASS Simulation pause toggles
+PASS Real mouse input deposits wet pigment
+PASS Undo restores exact empty fields
+PASS Redo restores exact IEEE-754 fields
+PASS Dry transfers pigment without deleting it
+PASS Wet adds water to material fields
+PASS Eraser removes actual material
+PASS Masking fluid writes the resist channel
+PASS Remove masking fluid clears resist channel
+PASS Rectangle selection is rasterized
+PASS Selection rejects paint outside its bounds
+PASS Selection permits paint inside its bounds
+PASS Deselect restores full editing area
+PASS Oil brush creates impasto
+PASS Double horizontal flip preserves exact material state
+PASS Duplicate layer copies all material channels
+PASS Native double-click layer rename works
+PASS Layer ordering is editable
+PASS Layer visibility toggles
+PASS Layer opacity applies
+PASS Layer blend mode applies
+PASS Locked layer rejects brush input
+PASS Alpha lock rejects paint on transparent cells
+PASS Contiguous fill adds material to a blank layer
+PASS Fill participates in document undo
+PASS Brush creator adds a reusable preset
+PASS Pigment-mixing palette selects its computed mixture
+PASS Paper properties affect the engine substrate
+PASS Browser project serialization is bit-exact across all layers
+PASS Saved project reopens with editable fields
+PASS PNG, JPEG, and WebP exports decode at requested canvas resolution
+PASS Heightmap exports a material-resolution PNG
+PASS Raster image import creates a pigment layer
+PASS Layer deletion applies through confirmation
+PASS Undo restores deleted layer and data
+PASS Save button downloads an editable .pigment file
+PASS File picker restores a downloaded project
+PASS Export dialog downloads a real PNG
+PASS Reference image loads into the pinned panel
+PASS Reference panel can be closed
+PASS Brush JSON export/import preserves the editable preset
+PASS Canvas rotation changes only the view
+PASS Keyboard tool shortcuts dispatch
+PASS Painting process records to a nonempty browser-encoded video
+PASS No unhandled JavaScript exceptions
+PASS No unexpected browser console errors
+{"checks": 54, "backend": "cpu", "gpuExecuted": false}
