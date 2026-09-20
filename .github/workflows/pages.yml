@@ -1,0 +1,54 @@
+name: Publish PigmentLab to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: "!startsWith(github.event.head_commit.message, 'Bootstrap ')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts --offline --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - name: Stage studio, reusable libraries, examples and diagnostics
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/tests _site/downloads
+          cp -R dist/. _site/
+          cp -R packages _site/packages
+          cp -R examples _site/examples
+          cp -R docs _site/docs
+          cp tests/gpu-smoke.html tests/gpu-checks.js _site/tests/
+          cp -R release/packages _site/downloads/packages
+          cp LICENSE release-manifest.json _site/
+          touch _site/.nojekyll
+          printf '{"commit":"%s","repository":"%s"}\n' "$GITHUB_SHA" "$GITHUB_REPOSITORY" > _site/build.json
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

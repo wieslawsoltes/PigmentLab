@@ -1,0 +1,46 @@
+name: PigmentLab validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  engines-and-build:
+    if: "!startsWith(github.event.head_commit.message, 'Bootstrap ')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm ci --ignore-scripts --offline --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: npm run build
+      - run: node --check dist/pigmentlab.js
+      - uses: actions/upload-artifact@v4
+        with:
+          name: PigmentLab-standalone
+          path: dist/
+  browser-cpu:
+    if: "!startsWith(github.event.head_commit.message, 'Bootstrap ')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm run build
+      - run: python -m pip install playwright==1.51.0
+      - run: python -m playwright install --with-deps chromium
+      - run: python tests/browser_test.py --inline
+      - run: python tests/examples_test.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: artifacts/
