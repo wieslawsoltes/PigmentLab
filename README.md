@@ -2,6 +2,8 @@
 
 **An original, editable natural-media painting studio built with HTML, JavaScript, and WebGPU.**
 
+[Open the studio](https://wieslawsoltes.github.io/PigmentLab/) · [Download standalone HTML](https://wieslawsoltes.github.io/PigmentLab/PigmentLab.html) · [Independent painting example](https://wieslawsoltes.github.io/PigmentLab/examples/minimal-paint.html) · [GPU diagnostics](https://wieslawsoltes.github.io/PigmentLab/tests/gpu-smoke.html) · [Build and deployment](https://github.com/wieslawsoltes/PigmentLab/actions)
+
 PigmentLab implements its own brush engine, wet-pigment simulation, optical compositor, paper generator, document format, history, and studio UI. The application consumes nine local ESM packages; the engines do not depend on the application. There are no third-party runtime dependencies or remote assets.
 
 This is a functional independent implementation inspired by the natural-media painting category, not a complete or compatible reimplementation of Rebelle. It does not contain Escape Motions code, assets, proprietary technology, or file-format support. See [the feature matrix](docs/FEATURES.md) for exact boundaries.
@@ -13,6 +15,7 @@ This is a functional independent implementation inspired by the natural-media pa
 Node.js 20 or newer:
 
 ```sh
+git clone https://github.com/wieslawsoltes/PigmentLab.git
 cd PigmentLab
 npm start
 # Open http://localhost:4173
@@ -23,14 +26,14 @@ No install is needed to run the source application: its import map resolves the 
 For local package imports in Node, tests, or rebuilding:
 
 ```sh
-npm install --offline --ignore-scripts
+npm ci --offline --ignore-scripts --no-audit --no-fund
 npm run check
 npm test
 npm run build
 node examples/headless.mjs examples/Headless-study.pigment
 ```
 
-The build creates `dist/index.html`, `dist/pigmentlab.js`, `dist/style.css`, and `dist/PigmentLab.html`. Copy the complete `dist/` directory to a static host, or serve it with `node scripts/serve.mjs --dist`. No server-side application is required. Hosting has not been provisioned by this source delivery.
+The build creates `dist/index.html`, `dist/pigmentlab.js`, `dist/style.css`, and `dist/PigmentLab.html`. Copy the complete `dist/` directory to a static host, or serve it with `node scripts/serve.mjs --dist`. No server-side application is required. Pushes to `main` automatically validate, rebuild, and deploy GitHub Pages; see [deployment documentation](docs/DEPLOYMENT.md).
 
 ## Painting workflow
 
@@ -60,18 +63,21 @@ All packages are MIT-licensed ESM packages with local workspace dependencies. `r
 
 ## Validation
 
-The delivery includes **42 passing Node engine/static-shader tests** and **54 passing Chromium CPU-backend integration checks**. The independent browser example and a separate npm consumer also passed. The browser suite exercises real pointer painting, lossless history, selections/masking, impasto, layers, project download/reopen, flattened exports, reference images, custom presets, video recording, and responsive layout. Screenshots and machine-readable results are in `artifacts/`.
+The complete delivery was rebuilt and tested on GitHub Actions: **42 Node engine/static-shader tests** and **54 Chromium CPU-backend studio checks**, plus the independent browser example and an independent npm consumer. [Import validation run](https://github.com/wieslawsoltes/PigmentLab/actions/runs/35508237025). Ongoing checks are in `.github/workflows/ci.yml`.
 
-The test environment did not expose a WebGPU adapter. Actual GPU pipeline compilation, CPU/GPU numerical comparison, pen hardware, persistent-origin autosave, and cross-browser/hardware performance remain unverified. Run the included adapter-backed suite at `http://localhost:4173/tests/gpu-smoke.html`; an unavailable adapter is explicitly **SKIPPED**, not passed. WGSL source lint is not a shader compiler.
+The browser suite exercises real pointer painting, lossless history, selections/masking, impasto, layers, project download/reopen, flattened exports, reference images, custom presets, video recording, and responsive layout. Fresh screenshots and machine-readable results are in `artifacts/`.
+
+The inline browser test context did not expose a WebGPU adapter. Actual GPU pipeline compilation, CPU/GPU numerical comparison, pen hardware, persistent-origin autosave, and cross-browser/hardware performance remain unverified. Run the [adapter-backed suite](https://wieslawsoltes.github.io/PigmentLab/tests/gpu-smoke.html); an unavailable adapter is explicitly **SKIPPED**, not passed. WGSL source lint is not a shader compiler.
 
 ```sh
 # Optional browser test tools; these are not runtime dependencies.
 python -m pip install playwright==1.51.0
 python -m playwright install chromium
 python tests/browser_test.py --inline
+python tests/examples_test.py
 ```
 
-Prepared GitHub Actions checks cover Node and CPU Chromium tests. They were not run on GitHub as part of this delivery. See [the test report](docs/TEST_REPORT.md).
+The [original test report](docs/TEST_REPORT.md) describes the initial local environment and test coverage. The GitHub validation and artifact provenance in [deployment documentation](docs/DEPLOYMENT.md) supersede its original statement that Actions had not yet run.
 
 ## Engineering documentation
 
@@ -79,7 +85,8 @@ Prepared GitHub Actions checks cover Node and CPU Chromium tests. They were not 
 - [Package API and embedding](docs/API.md)
 - [Binary project format and validation](docs/FORMAT.md)
 - [Implemented features and product boundaries](docs/FEATURES.md)
-- [Validation report](docs/TEST_REPORT.md)
+- [Original validation report](docs/TEST_REPORT.md)
+- [Deployment and source provenance](docs/DEPLOYMENT.md)
 - [Independent browser painting example](examples/minimal-paint.html)
 - [Headless material-painting example](examples/headless.mjs)
 

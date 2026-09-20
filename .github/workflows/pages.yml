@@ -10,7 +10,6 @@ concurrency:
   cancel-in-progress: false
 jobs:
   build:
-    if: "!startsWith(github.event.head_commit.message, 'Bootstrap ')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -52,3 +51,15 @@ jobs:
       - name: Deploy GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Verify published endpoints and commit identity
+        env:
+          PAGE_URL: ${{ steps.deployment.outputs.page_url }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${PAGE_URL%/}"
+          for route in '' examples/minimal-paint.html tests/gpu-smoke.html; do
+            curl --fail --silent --show-error --retry 8 --retry-all-errors --retry-delay 5 --max-time 30 "$base/$route" -o /dev/null
+          done
+          curl --fail --silent --show-error --retry 8 --retry-all-errors --retry-delay 5 --max-time 30 "$base/build.json?commit=$GITHUB_SHA" -o build.json
+          python3 -c 'import json,os; v=json.load(open("build.json")); assert v["commit"]==os.environ["GITHUB_SHA"],v; print("Verified published commit:",v["commit"])'
